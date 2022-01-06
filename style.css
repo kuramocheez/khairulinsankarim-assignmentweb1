@@ -1,0 +1,157 @@
+body { overflow-x:hidden; }
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(245, 245, 245, 0.99);
+}
+.header-nav a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  color: #333333;
+  transition: 500ms;
+}
+
+.header-nav a:hover {
+  border-bottom: 1px solid #ff6600;
+  color: #3333aa;
+  transition: 500ms;
+}
+
+#logo {
+  max-width: 100px;
+  margin-left: 20px;
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+
+#hero {
+  position: relative;
+  height: 500px;
+  background-image: url(office.jpg);
+  background-size: cover;
+}
+
+#hero-button {
+  position: absolute;
+  top: 250px;
+  left: 200px;
+  font-size: 28px;
+  background-color: rgba(0, 0, 0, 0.83);
+  padding: 30px;
+  color: white;
+}
+
+#hero-button:hover {
+  background-color: rgba(255, 255, 0255, 0.73);
+  cursor: pointer;
+  color: black;
+}
+
+#hero .title {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+#hero .title h2 {
+  font-weight: bolder;
+}
+
+.text-wrapper-hero {
+  position: absolute;
+  top: 250px;
+  left: 450px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+.text-wrapper-hero p {
+  font-weight: bold;
+}
+
+#service {
+  margin-top: 60px;
+}
+
+#service i {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+#service .title-wrapper h3{
+  font-weight: boulder;
+}
+
+.service-satu i{
+  background-color: #e6d1cf;
+  padding:20px;
+  border-radius: 90%;
+  transition: 500ms;
+}
+
+.service-satu i:hover{
+  transform: rotate(15deg);
+  transition: 500ms;
+  cursor: pointer;
+  color:  #e6d1cf;
+  background-color: rgba(0, 0, 0, 0.83);
+  padding:20px;
+  border-radius: 90%;
+}
+
+.service-dua i{
+
+  background-color: #d2a295;
+  padding:20px;
+  border-radius: 90%;
+}
+.service-dua i:hover{
+  transform: rotate(15deg);
+  transition: 500ms;
+  cursor: pointer;
+  color: #d2a295;
+  background-color: rgba(0, 0, 0, 0.83);
+  padding:20px;
+  border-radius: 90%;
+}
+.service-tiga i{
+  background-color: rgba(198, 245, 88, 0.733);
+  padding:20px;
+  border-radius: 90%;
+}
+.service-tiga i:hover{
+  transform: rotate(15deg);
+  transition: 500ms;
+  cursor: pointer;
+  color: rgba(198, 245, 88, 0.733);
+  background-color: rgba(0, 0, 0, 0.83);
+  padding:20px;
+  border-radius: 90%;
+}
+
+#service>div.text-center{
+  /* border: 1px solid black; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 0px 0px 10px #cccccc;
+}
+
+#contact{
+  margin: 50px;
+}
+
+#form-wrapper{
+  margin-bottom: 100px;
+}
+
+#lemap{
+  height: 80%;
+}
+
+#footer{
+  background-color: rgba(245, 245, 245, 0.99);
+  margin-top:50px;
+  padding-bottom: 75px;
+  padding-top: 75px;
+}

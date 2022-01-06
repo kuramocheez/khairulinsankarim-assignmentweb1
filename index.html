@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Project 1.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+            integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+            crossorigin="" />
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="row" >
+            <div class="col-6">
+                <img id="logo" src="Logo.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-6">
+            <ul class="header-nav nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Login</a>
+                </li>
+            </ul>
+            </div>
+        </header>
+        <div id="hero" class="row">
+            <div class="title">
+                <h2>Daftar Sekarang, dan dapatkan diskon 60%</h2>
+            </div>
+            <div class="button-custom"><button id="hero-button" class="btn">Daftar Disini</button></div>
+            <div class="text-wrapper-hero"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est placeat corrupti ex ipsa aliquid </p>
+            <p>perspiciatis incidunt quas. Deserunt, ex saepe eaque esse dolor ducimus vel et architecto non, optio blanditiis.</p></div>
+        </div>
+        <div id="service" class="row justify-content-center">
+            <div class="col-1 "></div>
+            <div class="col-3 text-center service-satu">
+                <div class="icon-wrapper"><i class="fas fa-american-sign-language-interpreting friendship-icon"></i></div>
+                <div class="title-wrapper"><h3>Friendship</h3></div>
+                <div class="text-wrapper"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, aspernatur.</p></div>
+            </div>
+            <div class="col-3 text-center service-dua">
+                <div class="icon-wrapper"><i class="fab fa-angellist peace-icon"></i></div>
+                <div class="title-wrapper">
+                    <h3>Peace</h3></div>
+                <div class="text-wrapper"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, debitis!</p></div>
+            </div>
+            <div class="col-3 text-center service-tiga">
+                <div class="icon-wrapper"><i class="fab fa-android android-icon"></i></div>
+                <div class="title-wrapper"><h3>Android</h3></div>
+                <div class="text-wrapper"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, modi?</p></div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div id="contact" class="row">
+            <div class="col-1"></div>
+            <div class="col-5">
+                <div id="lemap">
+
+                </div>
+            </div>
+            <div class="col-5">
+                <div id="form-wrapper">
+                    <form id="form" action="#" method="post">
+                    <div class="form-group">
+                        <labe>Nama</labe>
+                        <input type="text" class="form-control" name="" id="">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" name="" id="">
+                    </div>
+                    <div class="form-group">
+                        <label>Isi</label>
+                        <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                        <button class="btn btn-success">Submit</button>
+                </form>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+        <footer id="footer" class="row ">
+            <div class="col-12">
+                <p class="text-center">Copyright &copy; 2021</p>
+            </div>
+        </footer>
+    </div>
+    <div class="modal-wrapper">
+        <div class="modal fade" id="ModalFriendship" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Friendship</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit a illo molestias aliquam ducimus perferendis commodi sunt, accusamus reprehenderit nesciunt enim aperiam iusto voluptatibus facilis, unde excepturi, dolorum vel! Sint quia molestiae voluptatum autem. Iste laboriosam sunt, eum esse quod deleniti soluta corrupti saepe quibusdam culpa rerum, delectus, asperiores laudantium?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <div class="modal fade" id="ModalFriendship" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Friendship</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit a illo molestias aliquam ducimus perferendis commodi sunt, accusamus reprehenderit nesciunt enim aperiam iusto voluptatibus facilis, unde excepturi, dolorum vel! Sint quia molestiae voluptatum autem. Iste laboriosam sunt, eum esse quod deleniti soluta corrupti saepe quibusdam culpa rerum, delectus, asperiores laudantium?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="ModalPeace" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Peace</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit a illo molestias aliquam ducimus
+                            perferendis commodi sunt, accusamus reprehenderit nesciunt enim aperiam iusto voluptatibus facilis,
+                            unde excepturi, dolorum vel! Sint quia molestiae voluptatum autem. Iste laboriosam sunt, eum esse
+                            quod deleniti soluta corrupti saepe quibusdam culpa rerum, delectus, asperiores laudantium?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="ModalAndroid" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Android</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit a illo molestias aliquam ducimus
+                            perferendis commodi sunt, accusamus reprehenderit nesciunt enim aperiam iusto voluptatibus facilis,
+                            unde excepturi, dolorum vel! Sint quia molestiae voluptatum autem. Iste laboriosam sunt, eum esse
+                            quod deleniti soluta corrupti saepe quibusdam culpa rerum, delectus, asperiores laudantium?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+<script>
+    var map = L.map('lemap').setView([-0.8467696, 119.892976], 13);
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken: 'pk.eyJ1Ijoia3VyYW1vY2hlZXoiLCJhIjoiY2t4azZzaHhsMzE0ejJwcTl0anJoNTRvMSJ9.KEYjJ8h8G_YAyPMpS57Fqg'
+        }).addTo(map);
+</script>
+
+<script>
+    $(document).ready(function(){
+        $(".friendship-icon").on("click", function(){
+            $("#ModalFriendship").modal("show");
+        });
+    });
+
+    $(document).ready(function () {
+            $(".friendship-icon").on("click", function () {
+                $("#ModalFriendship").modal("show");
+            });
+        });
+
+    $(document).ready(function () {
+            $(".peace-icon").on("click", function () {
+                $("#ModalPeace").modal("show");
+            });
+        });
+    
+    $(document).ready(function () {
+            $(".android-icon").on("click", function () {
+                $("#ModalAndroid").modal("show");
+            });
+        });
+</script>
